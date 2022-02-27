@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - Universidad Nacional de Loja</title>
+    <link rel="stylesheet" href="./css/contactenos.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./inicio.html"><img src="https://unl.edu.ec/sites/default/files/inline-images/unl_0.png"
+                    alt="UNL Universidad Nacional de Loja"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./inicio.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Universidad</a>
+                </li>
+                <li>
+                    <a href="./oferta-academica.html">Oferta Académica</a>
+                </li>
+                <li>
+                    <a href="#">Investigación</a>
+                </li>
+                <li>
+                    <a href="#">Vinculación</a>
+                </li>
+                <li>
+                    <a href="#">Comunidad</a>
+                </li>
+                <li>
+                    <a class="selected" href="./contactenos.html">Contáctenos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="maincontent">
+        <h1>Contáctenos</h1>
+        <p>Completa el siguiente formulario de contacto:</p>
+        <section>
+            <div class="boxes-container">
+                <form action="">
+                    <div class="row-form">
+                        <label for="nombre">Ingresa tu nombre: <span class="obligatorio">*</span> </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="row-form">
+                        <label for="correo">Ingresa tu correo electrónico: <span class="obligatorio">*</span></label>
+                        <input type="email" name="correo" id="correo" placeholder="Correo electrónico">
+                    </div>
+                    <div class="row-form">
+                        <label for="asunto">Ingresa el asunto: <span class="obligatorio">*</span></label>
+                        <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                    </div>
+                    <div class="row-form">
+                        <label for="mensaje">Ingresa tu mensaje: <span class="obligatorio">*</span></label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+                    <p><span class="obligatorio">*</span> Estos campos son obligatorios </p>
+                    <button class="form-button" type="submit">
+                        Enviar
+                    </button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/inicio.js"></script>
+</body>
+
+</html>

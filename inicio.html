@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Universidad Nacional de Loja</title>
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./inicio.html"><img src="https://unl.edu.ec/sites/default/files/inline-images/unl_0.png"
+                    alt="UNL Universidad Nacional de Loja"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./inicio.html" class="selected">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Universidad</a>
+                </li>
+                <li>
+                    <a href="./oferta-academica.html">Oferta Académica</a>
+                </li>   
+                <li>
+                    <a href="#">Investigación</a>
+                </li>
+                <li>
+                    <a href="#">Vinculación</a>
+                </li>
+                <li>
+                    <a href="#">Comunidad</a>
+                </li>
+                <li>
+                    <a href="./contactenos.html">Contáctenos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="maincontent">
+        <h1>Bienvenido al sitio web de la Universidad Nacional de Loja</h1>
+
+        <section class="slider">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="./imgs/1.png" style="width:100%"
+                        alt="Tres estudiantes universitarios y un anuncio sobre el retorno a clases presenciales.">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./imgs/2.png" style="width:100%"
+                        alt="Fotografía del campus de la univerisdad y un rótulo sobre la página oficial del Vicerrectorado">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./imgs/3.png" style="width:100%" alt="Mejora de la infraestructura de la UNL">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section>
+            <div class="boxes-container">
+                <div class="box">
+                    <h2>Oferta de maestrías</h2>
+                    <p>
+                        Continua tu preparación académica con nuestras 10 maestrías en los campos de la educación,
+                        energía y tecnología, las mismas que coadyuvan al desarrollo de habilidades, conocimientos y
+                        capacidades para proponer soluciones.
+                    </p>
+                    <button>
+                        Leer más
+                    </button>
+                </div>
+                <div class="box">
+                    <h2>Vinculación con la Sociedad</h2>
+                    <p>
+                        Através de nuestros proyectos de Vinculación, identificamos las necesidades del entorno y
+                        aportamos con soluciones a nivel local, regional y nacional, gestionando la transferencia de
+                        acciones de docencia e investigación a los sectores vulnerables
+                    </p>
+                    <button>
+                        Leer más
+                    </button>
+                </div>
+                <div class="box">
+                    <h2>Investigación</h2>
+                    <p>
+                        Contribuimos a la generación, innovación y transferencia de conocimientos científicos,
+                        humanísticos y tecnológicos, valorando los saberes ancestrales y vinculados al entorno local,
+                        nacional e internacional
+                    </p>
+                    <button>
+                        Leer más
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/inicio.js"></script>
+</body>
+
+</html>
