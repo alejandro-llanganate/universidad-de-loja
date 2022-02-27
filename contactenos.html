@@ -12,9 +12,10 @@
 
 <body>
     <header>
+        <div id="skip" style="position:relative; top:-100px;"><a href="#content">Saltar navegación</a></div>
         <div>
-            <a href="./inicio.html"><img src="https://unl.edu.ec/sites/default/files/inline-images/unl_0.png"
-                    alt="UNL Universidad Nacional de Loja"></a>
+            <img src="https://unl.edu.ec/sites/default/files/inline-images/unl_0.png"
+                alt="UNL Universidad Nacional de Loja">
         </div>
         <nav>
             <ul>
@@ -43,26 +44,33 @@
         </nav>
     </header>
     <main id="maincontent">
-        <h1>Contáctenos</h1>
+        <h1 id="content">Contáctenos</h1>
         <p>Completa el siguiente formulario de contacto:</p>
         <section>
             <div class="boxes-container">
-                <form action="">
+                <form action="" autocomplete="on">
                     <div class="row-form">
                         <label for="nombre">Ingresa tu nombre: <span class="obligatorio">*</span> </label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input aria-required='true' required type="text" name="nombre" id="nombre" placeholder="Nombre">
                     </div>
                     <div class="row-form">
                         <label for="correo">Ingresa tu correo electrónico: <span class="obligatorio">*</span></label>
-                        <input type="email" name="correo" id="correo" placeholder="Correo electrónico">
+                        <input aria-required='true' required type="email" name="correo" id="correo"
+                            placeholder="Correo electrónico">
                     </div>
                     <div class="row-form">
                         <label for="asunto">Ingresa el asunto: <span class="obligatorio">*</span></label>
-                        <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                        <input aria-required='true' required type="text" name="asunto" id="asunto" placeholder="Asunto">
+                    </div>
+                    <div class="row-form">
+                        <label for="telefono">Ingresa tu número telefónico:</label>
+                        <input aria-required='true' type="number" name="telefono" id="telefono"
+                            placeholder="Teléfono móvil">
                     </div>
                     <div class="row-form">
                         <label for="mensaje">Ingresa tu mensaje: <span class="obligatorio">*</span></label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <textarea aria-required='true' required id="mensaje" name="mensaje"
+                            placeholder="Mensaje"></textarea>
                     </div>
                     <p><span class="obligatorio">*</span> Estos campos son obligatorios </p>
                     <button class="form-button" type="submit">
